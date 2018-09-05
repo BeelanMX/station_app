@@ -1,0 +1,27 @@
+.Big_Card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  width: 280px;
+  height: 280px;
+  background-color: #25232E !important;
+  border-radius: 0px;
+  color: #F2F2F2
+}
+.Big_Card_label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+}
+.Big_Card_label .payload {
+  font-size: 100px;
+}
+.Big_Card_label .label {
+  font-size: 25px;
+}
+.Big_Card_icon {
+  align-self: flex-end;
+}
