@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+
 import logo from './logo.svg';
 import './App.css';
 import BigCard from './Components/BigCard';
+import TinyCard from './Components/TinyCard';
 
 class App extends Component {
   render() {
@@ -16,6 +18,14 @@ class App extends Component {
           label="Wind Direction"
           />
 
+        <div className="App_cardsContainer">
+          <TinyCard
+            payload={80}
+            label="Wind Speed"
+            unit="mp/h"
+            iconName="windspeed"
+            />
+        </div>
       </div>
     );
   }

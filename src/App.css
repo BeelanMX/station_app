@@ -5,7 +5,13 @@
 .App-logo {
   height: 80px;
 }
-
+.App_cardsContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
 .App-header {
   background-color: #222;
   height: 150px;

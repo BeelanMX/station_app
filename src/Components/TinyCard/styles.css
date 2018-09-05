@@ -1,0 +1,43 @@
+.Tiny_Card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  border: 1px solid rgba(36,36,36,0.1);
+  width: 300px;
+  height: 130px;
+  background-color: #f2f2f2;
+  color: #F2F2F2
+}
+.Tiny_Card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.Tiny_Card_label {
+  display: flex;
+  flex-direction: column;
+  color: #25232E;
+  position: absolute;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: left;
+}
+.Tiny_Card_label .payload {
+  font-size: 50px;
+}
+.Tiny_Card_label .label {
+  font-size: 15px;
+}
+.Tiny_Card_label .unit {
+  font-size: 10px;
+}
+.Tiny_Card_icon {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  background-color: #25232E;
+  align-self: flex-end;
+  justify-content: center;
+  border-radius: 50% 0px 0px 50%;
+}
