@@ -13,12 +13,12 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to Beelan Demo</h1>
         </header>
-        <BigCard
-          payload={180}
-          label="Wind Direction"
-          />
-
         <div className="App_cardsContainer">
+          <BigCard
+            payload={180}
+            label="Wind Direction"
+            iconName="rain"
+            />
           <TinyCard
             payload={80}
             label="Wind Speed"
