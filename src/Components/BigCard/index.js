@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Icon from '../Icon';
+import { ICONS_NAMES } from '../../consts/icons';
+
 import './styles.css';
 
 class BigCard extends Component {
@@ -22,7 +24,7 @@ class BigCard extends Component {
   }
 }
 BigCard.propTypes = {
-  iconName: PropTypes.oneOf(['wind', 'humedity', 'rain', 'windspeed', 'temperature']),
+  iconName: PropTypes.oneOf(ICONS_NAMES),
   iconSize: PropTypes.oneOf(['xl', 'l', 'm', 's']),
   unit: PropTypes.String
 }

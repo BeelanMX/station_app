@@ -6,6 +6,9 @@ import humedity from './humedity.svg';
 import rain from './rain.svg';
 import windspeed from './windspeed.svg';
 import temperature from './temperature.svg';
+import ilumination from './ilumination.svg';
+import { ICONS_NAMES } from '../../consts/icons'
+
 import './styles.css';
 
 const Icon = (props) => {
@@ -26,6 +29,9 @@ const Icon = (props) => {
     case 'temperature':
       icon = temperature;
       break;
+    case 'ilumination':
+      icon = ilumination;
+      break;
     default:
       icon = wind;
   }
@@ -36,7 +42,7 @@ const Icon = (props) => {
 };
 
 Icon.propTypes = {
-  iconName: PropTypes.oneOf(['wind', 'humedity', 'rain', 'windspeed','temperature']),
+  iconName: PropTypes.oneOf(ICONS_NAMES),
   size: PropTypes.oneOf(['xl', 'l', 'm', 's']),
 }
 Icon.defaultProps = {

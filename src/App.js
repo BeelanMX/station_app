@@ -57,10 +57,22 @@ helperMarkMessage = (data) => {
             iconName="windspeed"
             />
           <TinyCard
+            payload={80}
+            label="Rainin"
+            unit="%"
+            iconName="rain"
+            />
+          <TinyCard
             payload={53}
             label="Humidity"
             unit="%"
             iconName="humedity"
+            />
+          <TinyCard
+            payload={53}
+            label="Light level"
+            unit="%"
+            iconName="ilumination"
             />
         </div>
       </div>

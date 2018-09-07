@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Icon from '../Icon';
+import { ICONS_NAMES } from '../../consts/icons';
 import './styles.css';
 
 class TinyCard extends Component {
@@ -22,7 +23,7 @@ class TinyCard extends Component {
   }
 }
 TinyCard.propTypes = {
-  iconName: PropTypes.oneOf(['wind', 'humedity', 'rain', 'windspeed']),
+  iconName: PropTypes.oneOf(ICONS_NAMES),
 }
 TinyCard.defaultProps = {
 }
