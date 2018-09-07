@@ -45,14 +45,22 @@ helperMarkMessage = (data) => {
         <div className="App_cardsContainer">
           <BigCard
             payload={180}
-            label="Wind Direction"
-            iconName="rain"
+            label="Temperature"
+            iconName="temperature"
+            iconSize='m'
+            unit='º'
             />
           <TinyCard
             payload={80}
             label="Wind Speed"
             unit="mp/h"
             iconName="windspeed"
+            />
+          <TinyCard
+            payload={53}
+            label="Humidity"
+            unit="%"
+            iconName="humedity"
             />
         </div>
       </div>

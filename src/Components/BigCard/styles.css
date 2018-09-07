@@ -24,8 +24,12 @@
 }
 .Big_Card_label .payload {
   font-size: 100px;
+  display: flex;
 }
 .Big_Card_label .label {
+  font-size: 25px;
+}
+.Big_Card_label .payload .unit {
   font-size: 25px;
 }
 .Big_Card_icon {
