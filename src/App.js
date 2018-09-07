@@ -30,13 +30,17 @@ handleMessages = (topic, message) => {
 
     // Do something with the message
     // :)
+    this.helperMarkMessage(data)
   }
+helperMarkMessage = (data) => {
+  console.log(data)
+}
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Beelan Demo</h1>
+          <h1 className="App-title">Welcome to Beelan Weather Demo</h1>
         </header>
         <div className="App_cardsContainer">
           <BigCard
