@@ -70,6 +70,12 @@ helperMarkMessage = (data) => {
             />
           <TinyCard
             payload={53}
+            label="Daily Raining"
+            unit="%"
+            iconName="dayrain"
+            />
+          <TinyCard
+            payload={53}
             label="Light level"
             unit="%"
             iconName="ilumination"

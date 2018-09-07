@@ -7,6 +7,7 @@ import rain from './rain.svg';
 import windspeed from './windspeed.svg';
 import temperature from './temperature.svg';
 import ilumination from './ilumination.svg';
+import dayrain from './dayrain.svg';
 import { ICONS_NAMES } from '../../consts/icons'
 
 import './styles.css';
@@ -31,6 +32,9 @@ const Icon = (props) => {
       break;
     case 'ilumination':
       icon = ilumination;
+      break;
+    case 'dayrain':
+      icon = dayrain;
       break;
     default:
       icon = wind;

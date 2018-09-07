@@ -4,5 +4,5 @@ export const ICONS_NAMES = [
   'rain',
   'windspeed',
   'temperature',
-  'ilumination'];
-  
+  'ilumination',
+  'dayrain'];
