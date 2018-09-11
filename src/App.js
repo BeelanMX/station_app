@@ -9,6 +9,14 @@ import TinyCard from './Components/TinyCard';
 const STATION_DEV_EUI = '1245';
 
 class App extends Component {
+  state = {
+    temperature: 28,
+    windspeed: 100,
+    rain: 30,
+    humedity: 90,
+    dayrain: 10,
+    ilumination: 19,
+  }
   componentDidMount() {
     const mqttClient = new Mqtt();
     // example subs
@@ -36,6 +44,7 @@ helperMarkMessage = (data) => {
   console.log(data)
 }
   render() {
+    const {temperature, windspeed, rain, humedity, dayrain, ilumination} = this.state
     return (
       <div className="App">
         <header className="App-header">
@@ -44,38 +53,38 @@ helperMarkMessage = (data) => {
         </header>
         <div className="App_cardsContainer">
           <BigCard
-            payload={180}
+            payload={temperature}
             label="Temperature"
             iconName="temperature"
             iconSize='m'
             unit='º'
             />
           <TinyCard
-            payload={80}
+            payload={windspeed}
             label="Wind Speed"
             unit="mp/h"
             iconName="windspeed"
             />
           <TinyCard
-            payload={80}
+            payload={rain}
             label="Rainin"
             unit="%"
             iconName="rain"
             />
           <TinyCard
-            payload={53}
+            payload={humedity}
             label="Humidity"
             unit="%"
             iconName="humedity"
             />
           <TinyCard
-            payload={53}
+            payload={dayrain}
             label="Daily Raining"
             unit="%"
             iconName="dayrain"
             />
           <TinyCard
-            payload={53}
+            payload={ilumination}
             label="Light level"
             unit="%"
             iconName="ilumination"
